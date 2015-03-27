@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="pro.moussawi7.plugins.Telephony"
+        version="0.1.0">
+
+  <name>Telephony Viewer</name>
+  <description>
+  This plugin get Network Operator,Phone Number,Sim Serial Number,Network Country.
+  </description>
+
+  <license>MIT</license>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <!-- android -->
+  <platform name="android">
+    <js-module src="www/Telephony.js" name="Telephony">
+      <clobbers target="window.plugins.Telephony" />
+    </js-module>
+  
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Telephony">
+        <param name="android-package" value="pro.moussawi7.plugins.Telephony" />
+      </feature>
+    </config-file>
+
+    <config-file target="AndroidManifest.xml" parent="/*">
+   <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    </config-file>
+
+    <source-file src="src/android/pro/moussawi7/plugins/Telephony.java" target-dir="src/pro/moussawi7/plugins"/>
+  </platform>
+
+</plugin>
