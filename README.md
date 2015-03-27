@@ -1,6 +1,6 @@
 # Telephony
 
-> Telephony plugin for Android. This allows you to Obtain Network Operator,Phone Number,Sim Serial Number,Network Country if availables otherwise an empty strings.
+> Telephony plugin for Android. This allows you to Obtain Network Operator,Phone Number,Sim Serial Number,Network Country if available otherwise an empty string.
 
 ## Installation:
 
@@ -9,7 +9,7 @@
     cordova plugin add https://github.com/Moussawi7/Cordova-Telephony
 
 ## Benefits:
-This plugin return Network Operator,Phone Number,Sim Serial Number,Network Country if availables otherwise an empty strings.
+This plugin return Network Operator,Phone Number,Sim Serial Number,Network Country if available otherwise an empty string.
 	
 ## Usage
 The plugin creates the object window.plugins.Telephony
